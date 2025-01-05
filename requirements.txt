@@ -4,5 +4,6 @@ matplotlib
 seaborn
 scikit-learn
 tpot==0.12.0
+flask
 dill
 #-e .

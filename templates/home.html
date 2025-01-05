@@ -1,0 +1,27 @@
+<html>
+<body>
+    <div class="login">
+        <h1>Blood Donation Prediction</h1>
+
+        <form method="POST" action="/predictdata">
+            <label for="recency_months">Recency (Months):</label>
+            <input type="text" id="recency_months" name="recency_months" required>
+            
+            <label for="frequency_times">Frequency (Times):</label>
+            <input type="text" id="frequency_times" name="frequency_times" required>
+            
+            <label for="monetary_cc_blood">Monetary (cc Blood):</label>
+            <input type="text" id="monetary_cc_blood" name="monetary_cc_blood" required>
+            
+            <label for="time_months">Time (Months):</label>
+            <input type="text" id="time_months" name="time_months" required>
+            
+            <button type="submit">Predict</button>
+        </form>
+        
+        <h2>
+            The prediction is {{ results }}
+        </h2>
+    </div>
+</body>
+</html>
